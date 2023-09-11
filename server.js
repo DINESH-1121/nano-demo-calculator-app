@@ -15,8 +15,6 @@ baseRouter.get("/greeting", (req, res) => {
 });
 
 baseRouter.post("/add", (req, res) => {
-    console.log(req.body.first);
-    console.log(req.body.second);
     const first = req.body.first;
     const second = req.body.second;
     const result = first + second;
